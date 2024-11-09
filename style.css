@@ -1,0 +1,168 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF6F61, #D4A5A5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page {
+    background: linear-gradient(135deg, #FF6F61, #D4A5A5);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px;
+    animation: fadeIn 1s ease-out;
+}
+
+.content {
+    color: #fff;
+    animation: slideIn 1.5s ease-out;
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.description {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    animation: fadeInUp 2s ease-out;
+}
+
+.start-btn {
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    background-color: #fff;
+    color: #FF6F61;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-btn:hover {
+    background-color: #FF6F61;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Quiz Container */
+.quiz-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.question-option {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.question-option:hover {
+    background: #f1f1f1;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Progress Bar */
+#progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 10px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 0;
+    background: #FF6F61;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
